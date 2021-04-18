@@ -1,6 +1,6 @@
 ---
 layout: work
-title: "d2l-pytorch"
+title: "d2l-tf"
 description : "Dive Into Deep Learning Book with PyTorch Implementation"
 caption: This project reproduces the book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.
 tags: ["Deep Learning", "PyTorch"]

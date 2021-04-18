@@ -5,8 +5,8 @@ description : "Dive Into Deep Learning Book with PyTorch Implementation"
 caption: This project reproduces the book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.
 tags: ["Deep Learning", "PyTorch"]
 
-thumbnail-img: /assets/img/d2l_pytorch.svg
-share-img: /assets/img/d2l_pytorch.svg
+thumbnail-img: /assets/img/d2l_pytorch.png
+share-img: /assets/img/d2l_pytorch.png
 comments: true
 github: https://github.com/dsgiitr/d2l-pytorch
 ---

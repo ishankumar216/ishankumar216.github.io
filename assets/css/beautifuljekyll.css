@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 1.95rem;
 }
 h2 {
   font-size: 1.875rem;
@@ -458,9 +458,18 @@ footer .footer-custom-content {
   font-size: 1.175rem;
   margin-top: 0;
 }
+.post-preview .post-title-2 {
+  font-size: 1.175rem;
+  margin-top: 0;
+}
 .post-preview .post-subtitle {
   margin: 0;
   font-weight: 300;
+  margin-bottom: 0.625rem;
+}
+.post-preview .post-subtitle-2{
+  margin: 0;
+  font-weight: 200;
   margin-bottom: 0.625rem;
 }
 .post-preview .post-meta,
@@ -950,6 +959,10 @@ pre {
 }
 
 /* --- Misc blog post styles --- */
+.section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
 
 .blog-post :first-child {
   margin-top: 0;
@@ -1027,6 +1040,39 @@ background: #FFFF98;
   text-align: center;
 }
 
+figure .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+figure .overlay a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 23px;
+  line-height: 1;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  margin: 4px;
+  transform: scale3d(0, 0, 0);
+  transition: all 400ms;
+}
+
+figure .overlay a:hover {
+  text-decoration: none;
+}
+
+figure .overlay:hover a {
+  transform: scale3d(1, 1, 1);
+}
+
 #table-wrapper table tbody td .text {
   position:relative;   
   top:0px;
@@ -1035,4 +1081,52 @@ background: #FFFF98;
   width:100%;
   font-size: 10px;
   text-align: center;
+}
+
+figure .buttons {
+  margin-top: 40%;
+  text-align: center;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+figure .buttons a:hover {
+  background: #02bdd5;
+  border-color: #02bdd5;
+}
+
+figure .buttons a:focus {
+  text-decoration: none;
+}
+
+.small-middle-container{
+  margin: auto;
+  height:240px;
+  width: 40%;
+  background: #02bdd5;
+  display: inline-block;
+}
+
+.wrapper{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.fancybox-title {
+  padding: 15px 8px;
+}
+
+.fancybox-title h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.img-fluid-work-event {
+  width: 100%;
+  height: 480px;
+}
+
+.img-fluid {
+  width: 485px;
+  height: 485px;
 }

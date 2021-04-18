@@ -4,43 +4,12 @@ layout: page
 
 {{ content }}
 
+{% assign posts = site.projs %}
 
-
-
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
-
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
-
-    <section class="page__content" itemprop="text">
-      {{ content }}
-    </section>
-  </article>
-</div>
-
-
-
-
-
-
-
-
-
-
-{% assign posts = paginator.projs | default: site.projs %}
-
-<div class="small-middle-container">
+<div class="posts-list">
   {% for post in posts %}
+  
   <article class="post-preview">
-
     {%- capture thumbnail -%}
       {% if post.thumbnail-img %}
         {{ post.thumbnail-img }}
@@ -66,31 +35,19 @@ layout: page
     {% endif %}
 
     <a href="{{ post.url | absolute_url }}">
-      <h4 class="post-title-2">{{ post.title }}</h4>
+      <h2 class="post-title">{{ post.title }}</h2>
 
       {% if post.subtitle %}
-        <h6 class="post-subtitle-2">
+        <h3 class="post-subtitle">
         {{ post.subtitle }}
-        </h6>
+        </h3>
       {% endif %}
     </a>
 
-       <p class="post-meta">
+    <p class="post-meta">
       {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-       {{ post.date | date: date_format }}
+      Posted on {{ post.date | date: date_format }}
     </p>
-    
-  
-<!--
-  <ul class="pagination main-pager">
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
-  </li>
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Olffder Posts &rarr;</a>
-  </li>
-  </ul>
--->
 
     {% if thumbnail != "" %}
     <div class="post-image post-image-small">
@@ -111,17 +68,7 @@ layout: page
 
     
     {% endunless %}
-
-   </article>
   {% endfor %}
-</div>
-
-
-
-
-
-
-
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
@@ -137,3 +84,4 @@ layout: page
   {% endif %}
 </ul>
 {% endif %}
+

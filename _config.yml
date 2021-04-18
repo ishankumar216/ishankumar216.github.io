@@ -16,10 +16,8 @@ author: Ishan Kumar
 navbar-links:
   About Me: "index"
   Blogs : "blogs"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Projects : "projects"
+  CV : "https://guthib/com"
 
 # --- Logo --- #
 
@@ -89,7 +87,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "Ishan,ishan,kumar,Kumar,Ishan Kumar,ishan kumar, IIT Roorkee, DSG, Ishan Kumar IITR, Ishan Kumar IIT Roorkee"
 
 # --- Colours / background image --- #
 
@@ -211,6 +209,12 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+
+collections:
+  projs:
+      output: true
+      layout: "post"
+
 
 # Exclude these files from production site
 exclude:
