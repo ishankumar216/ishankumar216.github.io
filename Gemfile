@@ -7,5 +7,5 @@ gemspec
 gem 'jekyll-watch'
 gem 'jekyll-seo-tag'
 gem 'bootstrap', '~> 4.0.0'
-gem "minimal-mistakes-jekyll"
+
 
