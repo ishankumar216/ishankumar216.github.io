@@ -8,6 +8,7 @@ tags: ["Deep Learning", "PyTorch"]
 
 comments: true
 github: https://github.com/Ishan-Kumar2/Reddit-Flair-Detector
+date: March 2020 - June 2020
 ---
 
 This model aims to detect the flair of a Reddit post from '/india' subreddit. The model classifies the flair of a post given its content, into Coronavirus, Nonpolitical, Political and others. The model can also be hosted as a web service (done using Flask). The data was scrapped using Reddit's API PRAW
