@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Lora', 'Roboto Condensed', serif;
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
@@ -1129,4 +1129,36 @@ figure .buttons a:focus {
 .img-fluid {
   width: 485px;
   height: 485px;
+}
+
+.btn-github {
+  background-color: #444444;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn-github:hover {opacity: 1}
+
+
+.center-img {
+
+
+  position: relative;
+
+
+  left: 50%;
+
+
+  top: 50%;
+
+
+  transform: translate(-50%, -50%);
+
+
 }
